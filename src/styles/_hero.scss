@@ -1,0 +1,26 @@
+@use 'cores';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../../dist/images/pacific-rim.png);
+    border-bottom: 7px solid #fff;
+    // margin-top: -16px;
+
+    &__content {
+        max-width: 640px;
+        
+        &__text {
+            color: #fff;
+            position: relative;
+            left: 160%;
+            padding: 16px 18px;
+            font-size: larger;
+            background-color: cores.$corDeFundoPrincipal;
+            opacity: .8;
+            border-radius: 10px;
+        }
+    }
+}

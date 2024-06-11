@@ -1,0 +1,41 @@
+@use 'cores';
+
+.about {
+    
+    &__content {
+        position: relative;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        margin-top: 10px;
+        
+        img {
+            width: 500px;
+            height: 400px;
+            padding: 0;
+            border: 8px solid #fff;
+            border-radius: 6px;
+        }
+
+        &__text {
+            width: 300px;
+            margin: 24px;
+            padding: 1vw;
+            background: transparent;
+            font-size: medium;
+            border: 6px solid #fff;
+
+            h3 {
+                margin-bottom: 8px;
+                border-bottom: 2px solid #fff;
+                text-indent: 90px;
+            }
+            
+            p {
+                text-indent: 20px;
+            }
+        }
+    }
+}

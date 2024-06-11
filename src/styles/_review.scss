@@ -1,0 +1,32 @@
+@use 'cores';
+
+.review {
+    display: block;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    left: 35%;
+    position: relative;
+    margin-top: 42px;
+
+    &__content {
+        padding: 24px 32px;
+
+        h2 {
+            padding: 16px;
+            background-color: #fff;
+            color: cores.$corDoTextoSecundario;
+        }
+
+        &__text {
+            padding: 12px;
+            font-size: large;
+            border: 4px solid #fff;
+            
+            p {
+                margin-bottom: 8px;
+                text-indent: 25px;
+            }
+        }
+    }
+}

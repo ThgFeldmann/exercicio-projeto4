@@ -1,0 +1,11 @@
+@use 'cores';
+
+.footer {
+    justify-content: center;
+    display: flex;
+    
+    &__disclaimer {
+        padding: 18px;
+        color: cores.$corDoTextoPrincipal;
+    }
+}

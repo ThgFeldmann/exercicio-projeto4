@@ -1,0 +1,50 @@
+@use 'cores';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    opacity: .8;
+    
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: cores.$corDoTextoSecundario;
+        }
+    }
+
+    &__title {
+        max-width: 250px;
+        width: 100%;
+        margin: 5px;
+        margin-left: 200px;
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        background-color: #000;
+        border-radius: 10px;
+        
+        &__item {
+            margin: 5px;
+            border: 2px solid #fff;
+            border-radius: 4px;
+            
+            a {
+                text-decoration: none;
+                border: none;
+                color: #fff;
+                font-size: large;
+                padding: 6px;
+            }
+        }
+    }
+}
