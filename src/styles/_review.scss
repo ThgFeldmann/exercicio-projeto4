@@ -9,19 +9,49 @@
     position: relative;
     margin-top: 42px;
 
+    @media (max-width: 768px) {
+        left: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        left: 0;
+    }
+
     &__content {
         padding: 24px 32px;
+
+        @media (max-width: 768px) {
+            font-size: larger;
+            max-width: 768px;
+            padding: 24px 16px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            width: 800px;
+        }
 
         h2 {
             padding: 16px;
             background-color: #fff;
             color: cores.$corDoTextoSecundario;
+
+            @media (min-width: 769px) and (max-width: 1023px) {
+                font-size: 55px;
+            }
         }
 
         &__text {
             padding: 12px;
             font-size: large;
             border: 4px solid #fff;
+
+            @media (max-width: 768px) {
+                font-size: larger;
+            }
+
+            @media (min-width: 769px) and (max-width: 1023px) {
+                font-size: 45px;
+            }
             
             p {
                 margin-bottom: 8px;

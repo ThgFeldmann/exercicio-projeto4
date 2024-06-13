@@ -15,4 +15,9 @@
 body {
     background-color: cores.$corDeFundoPrincipal;
     color: cores.$corDoTextoPrincipal;
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+        width: 100%;
+    }
 }

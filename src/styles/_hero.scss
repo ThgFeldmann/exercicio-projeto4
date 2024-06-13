@@ -6,8 +6,9 @@
     text-align: center;
     background-size: cover;
     background-image: url(../../dist/images/pacific-rim.png);
+    background-repeat: no-repeat;
     border-bottom: 7px solid #fff;
-    // margin-top: -16px;
+    margin-top: -16px;
 
     &__content {
         max-width: 640px;
@@ -21,6 +22,18 @@
             background-color: cores.$corDeFundoPrincipal;
             opacity: .8;
             border-radius: 10px;
+
+            @media (max-width: 768px) {
+                left: -12px;
+                width: 190px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1023px) {
+                left: -2px;
+                padding: 30px;
+                width: 340px;
+                font-size: xx-large;
+            }
         }
     }
 }

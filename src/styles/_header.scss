@@ -7,7 +7,6 @@
     z-index: 1;
     background-color: #fff;
     opacity: .8;
-    
 
     &__container {
         padding: 8px 36px;
@@ -17,6 +16,16 @@
         h1 {
             color: cores.$corDoTextoSecundario;
         }
+
+        @media (max-width: 768px) {
+            padding: 1px;
+            font-size: small;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            padding: 24px;
+            font-size: x-large;
+        }
     }
 
     &__title {
@@ -24,6 +33,14 @@
         width: 100%;
         margin: 5px;
         margin-left: 200px;
+
+        @media (max-width: 768px) {
+            margin-left: 4px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            margin-left: 8px;
+        }
     }
 
     &__links {
@@ -32,6 +49,10 @@
         align-items: center;
         background-color: #000;
         border-radius: 10px;
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            padding: 25px;
+        }
         
         &__item {
             margin: 5px;
@@ -44,6 +65,15 @@
                 color: #fff;
                 font-size: large;
                 padding: 6px;
+
+                @media (max-width: 768px) {
+                    padding: 11px;
+                }
+
+                @media (min-width: 769px) and (max-width: 1023px) {
+                    font-size: xx-large;
+                    padding: 18px;
+                }
             }
         }
     }
